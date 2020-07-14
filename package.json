@@ -1,0 +1,22 @@
+{
+  "name": "amdocs_exercise-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -q"
+  },
+  "author": "enrique dcss",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "testcafe": "^1.8.8",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
