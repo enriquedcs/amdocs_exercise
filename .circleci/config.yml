@@ -1,14 +1,10 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node:10.14-browsers
 jobs:
   build-and-test:
     executor:
-      name: node/default
-
-    docker:
-      - image: circleci/node:10.14-browsers
-    
+      name: circleci/node:10.14-browsers
     steps:
       - checkout
       - node/with-cache:
@@ -19,5 +15,3 @@ workflows:
     build-and-test:
       jobs:
         - build-and-test
-store_test_results:
-          path: /tmp/test-results
