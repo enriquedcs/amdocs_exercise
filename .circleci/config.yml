@@ -6,6 +6,7 @@ jobs:
     executor: node/default
     steps:
       - checkout
+      - node/with-cache:
       - run: npm install
   test:
     docker:
@@ -20,3 +21,5 @@ workflows:
     jobs:
       - build
       - test
+          requires:
+            - build 
