@@ -3,7 +3,8 @@ jobs:
   build-and-test:
       docker:
       - image: circleci/node:10.14-browsers
-    steps:
+    
+      steps:
       - checkout
       - node/with-cache:
           steps:
