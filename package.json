@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test:chrome": "testcafe chrome ./tests -q"
+    "test": "testcafe chrome ./tests -q"
   },
   "author": "enrique dcss",
   "license": "ISC",
