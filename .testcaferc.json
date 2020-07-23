@@ -1,0 +1,10 @@
+{
+    "screenshotPath": "./screenshots",
+    "takeScreenshotsOnFails": true,
+    "videoPath": "./videos",
+    "videoOptions": {
+        "singleFile": true,
+        "failedOnly": true,
+        "pathPattern": "${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4"
+    }
+}
